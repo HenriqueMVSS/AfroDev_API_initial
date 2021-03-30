@@ -1,0 +1,26 @@
+{
+  "name": "afrodev_api_initial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenriqueMVSS/AfroDev_API_initial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenriqueMVSS/AfroDev_API_initial/issues"
+  },
+  "homepage": "https://github.com/HenriqueMVSS/AfroDev_API_initial#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
