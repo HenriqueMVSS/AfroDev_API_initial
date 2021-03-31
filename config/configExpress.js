@@ -1,8 +1,17 @@
-const app = require('../index')
+const express = require('express')
+const consign = require('consign')
+const bodyParser = require('body-parser')
 
-app.listen(3000, () => console.log('Servidor rodando na porta 3000'));
+module.exports = () => {
+  // criando a aplicação
+  const app = express()
 
-app.get('/',(req, res) => {
+  // use() é utilizado para carregar libs dentro do express, para ler o body html da requisição
+  // use() é utilizado para carregar libs dentro do express, para ler o body em json da requisição
+  consign()
+  .include('controllers')
+  .into(app)
+   
+  return app
+}
 
-    res.send("Servidor OK");
-});
